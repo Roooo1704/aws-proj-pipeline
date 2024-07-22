@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo "hi"
+docker pull rohit256/test:tagname
 
 # Run the Docker image as a container
-echo "hi"
+docker run -d -p 80:80 rohit256/test:tagname
