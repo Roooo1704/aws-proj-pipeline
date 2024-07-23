@@ -1,8 +1,13 @@
 version: 0.0
 os: linux
+# files:
+#   - source: /app.py
+#     destination: /var/www/html/
+
 files:
-  - source: /app.py
-    destination: /var/www/html/
+  - source: /
+    destination: /opt/codedeploy-agent/deployment-root/02a28af6-69ee-45fa-8ed3-4916150322f3/d-GVNMOT1E7/deployment-archive/
+    
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
